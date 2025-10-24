@@ -1,0 +1,20 @@
+//this code was written with Java
+int[] new_nums = Arrays.stream(nums).sorted().toArray();
+    int result=0;
+    for(int n =0; n<new_nums.length; n++)
+    {
+        if(target == new_nums[n]){
+            return n;
+        }
+        else if(new_nums[n]>target)
+        {
+            result = n;
+            return result;
+        }
+        else if (n+1>= new_nums.length)
+        {
+            return n+1;
+        }
+
+    }
+    return 0;
