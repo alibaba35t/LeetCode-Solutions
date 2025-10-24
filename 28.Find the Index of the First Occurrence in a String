@@ -1,0 +1,17 @@
+//this code was written with Java
+
+haystack= haystack.toLowerCase();
+needle = needle.toLowerCase();
+
+// these rows are written to prevent possible errors
+
+boolean a =haystack.contains(needle);
+System.out.println(a);
+if(a)
+{
+   return haystack.indexOf(needle);
+}
+else
+{
+   return -1;
+}
