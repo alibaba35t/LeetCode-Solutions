@@ -1,3 +1,4 @@
+// This code was written with Java
 class Solution {
     public int removeElement(int[] nums, int val) {
             int new_length = 0;
