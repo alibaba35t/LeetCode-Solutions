@@ -16,7 +16,15 @@ else
 start_index = s.indexOf("(");
 end_index = s.lastIndexOf(")");
 result = (end_index - start_index);
-return result;
+// return result;  ^#Because I considered that result may be negative. If reault is negative we will return 0.
+        if(result>0)
+        {
+            return result;
+        }
+        else
+        {
+            return 0; 
+        }
 }
 }
 
