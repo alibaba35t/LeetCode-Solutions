@@ -1,0 +1,23 @@
+//this code was written by Java
+
+int start_index= 0;
+int end_index=0;
+int result=0;
+        
+if(s.contains("("))
+{
+  if(!s.contains(")"))
+  {
+  return 0;
+  }
+
+else
+{
+start_index = s.indexOf("(");
+end_index = s.lastIndexOf(")");
+result = (end_index - start_index);
+return result;
+}
+}
+
+return 0;
